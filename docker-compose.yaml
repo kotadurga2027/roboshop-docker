@@ -63,7 +63,7 @@ services:
     ports:
     - "80:80"
     depends_on: 
-    - catalogue
+    - catalouge
     - user
     - cart
     - shipping
