@@ -44,7 +44,7 @@ services:
       RABBITMQ_DEFAULT_PASS : roboshop123
   payment:
     image: gkd1997/payment:v1
-    container: payment
+    container_name: payment
     environment:
       CART_HOST: cart
       CART_PORT: 8080
