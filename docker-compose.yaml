@@ -59,8 +59,8 @@ services:
     - rabbitmq
   frontend:
     image: gkd1997/frontend:v1
-    container: frontend
-    port:
+    container_name: frontend
+    ports:
     - "80:80"
     depends_on: 
     - catalogue
