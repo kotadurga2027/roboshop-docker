@@ -57,6 +57,17 @@ services:
     - cart
     - user
     - rabbitmq
+frontend:
+  image: gkd1997/frontend:v1
+  container: frontend
+  port:
+  - "80:80"
+  depends_on: 
+  - catalogue
+  - user
+  - cart
+  - shipping
+  - payment
 
 
 
