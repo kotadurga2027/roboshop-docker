@@ -25,7 +25,7 @@ services:
     image: redis:7.0
     container_name: redis
   volumes:
-  - redis:/data redis
+  - redis:/data
   user:
     image: gkd1997/user:v1
     container_name: user
