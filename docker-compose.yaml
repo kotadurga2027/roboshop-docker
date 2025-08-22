@@ -8,14 +8,12 @@ volumes:
   redis:
   mysql:
   rabbitmq:
-
-
 services:
   mongodb:
     image: gkd1997/mongodb:v1
     container_name: mongodb
-  volumes:
-  - mongodb:/data/db
+    volumes:
+    - mongodb:/data/db
   catalouge:
     image: gkd1997/catalouge:v1
     container_name: catalouge
@@ -24,8 +22,8 @@ services:
   redis:
     image: redis:7.0
     container_name: redis
-  volumes:
-  - redis:/data
+    volumes:
+    - redis:/data
   user:
     image: gkd1997/user:v1
     container_name: user
