@@ -1,5 +1,5 @@
 FROM node:20.19-alpine3.21
-RUN addugroup -S roboshop && adduser -S roboshop -G roboshop
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 WORKDIR /opt/server
 COPY package.json .
 COPY *.js .
