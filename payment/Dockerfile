@@ -1,4 +1,4 @@
-FROM python:3.9.23-alpine3.22
+FROM python:3.9.23-alpine3.22 AS builder
 WORKDIR /build
 RUN apk add --no-cache python3-dev build-base linux-headers pcre-dev
 COPY requirements.txt .
