@@ -8,7 +8,7 @@ RUN pip3 install -r requirement.txt
 FROM python:3.9.23-alpine3.22
 EXPOSE 8080
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop \
-    && chown -R roboshop:roboshop /opt/server
+    chown -R roboshop:roboshop /opt/server
 WORKDIR /opt/server
 COPY --from=builder /opt/server opt/server
 RUN apk add python3-dev build-base linux-headers pcre-dev
