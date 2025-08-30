@@ -12,6 +12,7 @@ RUN addgroup -S roboshop && adduser -S roboshop -G roboshop \
     chown -R roboshop:roboshop /opt/server
 COPY --from=builder /opt/server opt/server
 RUN apk add python3-dev build-base linux-headers pcre-dev
+RUN pip install -r requirements.txt
 USER roboshop
 CMD ["uwsgi", "--ini", "payment.ini"]
 
