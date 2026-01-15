@@ -34,7 +34,7 @@ roboshop-docker/
 * Docker Engine (20+)
 * Docker Compose
 * Minimum 4 GB RAM recommended
-* Linux / macOS / Windows with WSL2
+* Linux (RHEL9 i am using for this project) / macOS / Windows with WSL2
 
 ## Docker Compose Configuration:
 * The docker-compose.yaml file defines all application services, including:
