@@ -16,7 +16,7 @@ This project demonstrates real-world DevOps practices including microservices ar
 * Linux
 
 ### Project Structure:
-'''text
+```text
 roboshop-docker/
 ├── frontend/        # Web frontend service
 ├── cart/            # Cart microservice
@@ -28,7 +28,7 @@ roboshop-docker/
 ├── mysql/           # MySQL database container
 ├── docker-compose.yaml  # Multi-container orchestration
 └── README.md        # Project documentation
-'''
+```
 
 ### Prerequisites:
 * Docker Engine (20+)
@@ -55,41 +55,41 @@ Each service is built from its respective directory using a dedicated Dockerfile
 
 ## How to Run the Application:
 ### Clone the repository:
-'''text
+```text
 git clone https://github.com/kotadurga2027/roboshop-docker.git
 cd roboshop-docker
-'''
+```
 ### Build Docker images:
-'''text
+```text
 docker-compose build
-'''
+```
 ### Start all services:
-'''text
+```text
 docker-compose up -d
-'''
+```
 ### Verify running containers:
-'''text
+```text
 docker ps
-'''
+```
 
 **************************************************************************
 ## Accessing the Application:
-'''text
+```text
 Component	Access
 Frontend	http://localhost:8080
 Backend APIs	Internal Docker network
-'''
+```
 * Ports depend on the docker-compose configuration.
 
 ***************************************************************************
 ### Useful Docker Commands: 
-'''text
+```text
 docker-compose up -d           # Start all services
 docker-compose down            # Stop and remove containers
 docker-compose ps              # List running services
 docker-compose logs -f         # View logs
 docker-compose build <service> # Rebuild specific service
-'''
+```
 
 *****************************************************************************
 ## Design Highlights: 
@@ -103,17 +103,17 @@ Easy local and cloud deployment
 *****************************************************************************
 ## Troubleshooting 
 ### Containers not starting 
-'''text
+```text
 docker-compose down --remove-orphans
-'''
+```
 ### Port already in use :
-'''text
+```text
 Modify port mappings in docker-compose.yaml
-'''
+```
 ### Database issues:
-'''text
+```text
 docker volume prune 
-'''
+```
 
 ******************************************************************************
 ### Future Enhancements:
